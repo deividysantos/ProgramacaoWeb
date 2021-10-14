@@ -1,4 +1,4 @@
-const redColor = '#d37d8e';
+const redColor = '#FFABBB';
 
 function NomeOk() {
     let inputNome = document.getElementById("idNomeProduto");

@@ -51,7 +51,7 @@ form input{
 }
 
 form input:focus{
-    border-bottom: 3px thin coral;
+    border-bottom: 3px solid rgb(255, 68, 0);
 }
 
 form button{
