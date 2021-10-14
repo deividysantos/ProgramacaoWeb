@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="VerificarDados.js"></script>
+    <script src="Scripts.js"></script>
+
+</head>
+<body onload="PopularTabela(), ApagarDadosDoForm()">
+    
+    <header>
+        <h1>Cadastrar Produto</h1>
+    </header>
+
+    <div class="corpo">
+
+        <form>
+
+            <label for="nomeProduto">Nome do produto</label>
+            <input oninput="NomeOk()" type="text" name="nomeProduto" id="idNomeProduto">
+    
+            <label for="marcaProduto">Marca</label>
+            <input oninput="MarcaOk()" type="text" name="marcaProduto" id="idMarcaProduto">
+    
+            <label for="quantidadeProduto">Quantidade</label>
+            <input oninput="QuantidadeOk()" type="number" name="quantidadeProduto" id="idQuantidadeProduto">
+    
+            <label for="precoProduto">Preço</label> 
+            <input oninput="PrecoOk()" type="number" name="precoProduto" id="idPrecoProduto">
+    
+            <button onclick="VerificarInput()">Incluir</button>
+    
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Marca</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+
+            <tbody id="corpoTabela">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
